@@ -10,8 +10,11 @@ a{
 }
 
 body{
-    background:linear-gradient(to top, hsl(0, 0%, 96%) 60%, hsl(212, 91%, 50%) 50%)  ;
-   
+    background-color:#E8FDFE;
+}
+
+.todo{
+    background:linear-gradient(to top, #E8FDFE 60%, hsl(212, 91%, 50%) 50%)  ;
     min-height: 100vh;
 }
 
@@ -20,6 +23,20 @@ body{
     top: 2rem;
     left: 4rem;
     width: 100%;
+}
+table{
+border-radius: 10px;
+width: 100%;
+background-color: white;
+padding: 0.6rem 2.5rem;
+font-weight: 900;
+border-radius: 25px;
+box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+}
+
+td{
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .logo-login{
@@ -39,10 +56,7 @@ box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149
     width: 40%;
 }
 
-.todo{
-    background-image: none;
-    background-color: #f5f5f5;
-}
+
 
 body::-webkit-scrollbar{
     width: 5px;
@@ -272,10 +286,19 @@ font-size:16px;
     border-bottom-left-radius: 0;
     line-height: 0.4rem;
 }
+.botones{
+    width: 21%
+}
 
 .submit-registro{
     border-radius: 0 0 0 5px;
     height: 3rem;
+}
+
+.boton-invent{
+    padding:  0.4rem 1rem;
+    font-weight: 900;
+    font-size: 0.8rem;
 }
 
 .reset{
@@ -699,17 +722,7 @@ input[name="slider-select-element"] {
     width: 100%;
 }
 
-.element-blue {
-    background: white  ;
-}
 
-.element-green {
-    background: white  ;
-}
-
-.element-red {
-    background: white  ;
-}
 
 .slider-element {
     position: relative;
