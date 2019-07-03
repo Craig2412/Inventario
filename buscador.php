@@ -84,7 +84,7 @@
                                             <td><?php echo $fila['cedula'] ?></td>
                                             <td><?php echo $fila['telefono'] ?></td>
                                             <td><?php echo $fila['piso'] ?></td>
-                                            <td class="filita"><?php echo $fila['dependencia'] ?></td>
+                                            <td ><?php echo $fila['dependencia'] ?></td>
                                             <td><?php echo $fila['marca1'] ?></td>
                                             <td><?php echo $fila['serie1'] ?></td>
                                             <td><?php echo $fila['mac'] ?></td>

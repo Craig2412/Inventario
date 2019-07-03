@@ -25,7 +25,7 @@ $p="P-";
                         <input type="radio" name="slider-select-element" id="element2" />
                         <input type="radio" name="slider-select-element" id="element3" />
                         
-                        <div id="slider-container">
+                        <div id="slider-container" class="text">
                             <div id="slider-box">
                                 <div class="slider-element">
                                     <article class="element-red">
