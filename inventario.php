@@ -30,7 +30,7 @@ $p="P-";
                                 <div class="slider-element">
                                     <article class="element-red">
         <!-- Primer Cuadro -->
-                                        <table border="1px" width="100%" align="center">
+                                        <table  align="center">
                                             <th align="center">ID</th>
                                             <th align="center">Funcionario</th>
                                             <th align="center">Usuario</th>
@@ -61,7 +61,7 @@ $p="P-";
                                 <div class="slider-element">
                                     <article class="element-green">
         <!-- Segundo Cuadro -->
-                                        <table border="1px" width="100%" align="center">
+                                        <table  align="center">
                                             <th align="center">Dependencia</th>
                                             <th align="center">Marca PC</th>
                                             <th align="center">Serial PC</th>
@@ -89,7 +89,7 @@ $p="P-";
                                 <div class="slider-element">
                                     <article class="element-blue">
         <!-- Tercer Cuadro -->
-                                        <table border="1px" width="100%" align="center">   
+                                        <table  align="center">   
                                             <th align="center">Serial Monitor</th>                                 
                                             <th align="center">Marca Teclado</th>
                                             <th align="center">Serial Teclado</th>
@@ -110,10 +110,10 @@ $p="P-";
                                                         <td><?php echo $fila['marca4'] ?></td>
                                                         <td><?php echo $fila['serie4'] ?></td>
                                                         <td><?php echo $fila['cargador'] ?></td>
-                                                        <td >
-                                                            <a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
-                                                            <a href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a>
-                                                            <a href="reporte.php?id=<?php echo $fila['id'] ?>">Reporte</a>
+                                                        <td  class="botones">
+                                                            <a class="boton boton-invent" href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
+                                                            <a class="boton boton-invent" href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a>
+                                                            <a class="boton boton-invent" href="reporte.php?id=<?php echo $fila['id'] ?>">Reporte</a>
                                                                                                                    </td>
                                                     </tr>
                                             <?php } ?>

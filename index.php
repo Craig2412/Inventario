@@ -51,7 +51,7 @@ if (!empty($_SESSION['active'])) {
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
-<body>
+<body class="todo">
 	<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
 		<header class="logo-login-header">
 			<a href="#">

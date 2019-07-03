@@ -96,8 +96,8 @@
                                             <td><?php echo $fila['marca4'] ?></td>
                                             <td><?php echo $fila['serie4'] ?></td>
                                             <td><?php echo $fila['cargador'] ?></td>
-                                            <td colspan="2"><a class="boton boton-buscador" href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
-                                            <a class="boton boton-buscador" href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
+                                            <td ><a class="boton boton-invent" href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
+                                            <a class="boton boton-invent" href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
                                         </tr>
                                     <?php } ?>
 
