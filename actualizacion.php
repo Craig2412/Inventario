@@ -48,6 +48,7 @@ if ($fila = $sel -> fetch_assoc()) {
 	</form>
 		
 
+    <?php require 'menu.php' ?>
 
 
 	</section>
@@ -60,22 +61,3 @@ if ($fila = $sel -> fetch_assoc()) {
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>
-		
-	</title>
-</head>
-<body>
-
-<center>
-
-	
-
-	<br><br>
-</center>
-
-
-</body>
-</html>

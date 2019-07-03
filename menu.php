@@ -1,106 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login Inventario</title>
-	<meta charset="utf-8">
-	<?php include 'enlaces.php' ?>
-</head>
-<body>
-
-	<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <?php include 'encabezado.php' ?>
-
-		<section class="login registro col-lg-6 col-md-7 col-sm-12 col-xs-12 col-xf-12">
-		<form class="form col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12" action="proceso.php" method="post">
-			<img class="icon-account icon-registro" src="img/registro.png" alt="">
-			<h1 class="title ti-registro">Registro</h1>
-
-			<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
-				<span>
-					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
-				</span>
-				<span>
-                    <select class="balloon indent" id="Cargo" type="text" name="cargo"  />Cargo<label class="label" for="Cargo">Cargo</label>
-                        <option value="Director de Linea">Director de Linea</option>
-                        <option value="Coordinador">Coordinador</option>                        
-                        <option value="Consultor Juridico">Consultor Juridico</option>
-                        
-                    </select>
-				</span>
-				<span>
-					<input class="balloon indent" id="Cedula" type="text" name="cedula"  /><label class="label" for="Cedula">Cedula</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Telefono" type="text" name="telefono"  /><label class="label" for="Telefono">Telefono</label>
-				</span>
-				<span>
-					<select class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
-                        <option value="PB">PB</option>
-                        <option value="P1"></option>
-                        <option value="P2"></option>
-                        <option value="P3"></option>
-                    </select>
-                </span>
-				<span>
-					<input class="balloon indent" id="Dependencia" type="text" name="dependencia" /><label class="label" for="Dependencia">Dependencia</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Marca1" type="text" name="marca1" /><label class="label" for="Marca1">Marca de PC</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Mac" type="text" name="mac" /><label class="label" for="Mac">MAC</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Marca2" type="text" name="marca2"  /><label class="label" for="Marca2">Marca del Monitor</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Serie2" type="text" name="serie2"  /><label class="label" for="Serie2">Serial del Monitor</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Marca3" type="text" name="marca3"  /><label class="label" for="Marca3">Marca del Teclado</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Serie3" type="text" name="serie3"  /><label class="label" for="Serie3">Serial del Teclado</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Marca4" type="text" name="marca4"  /><label class="label" for="Marca4">Marca del Mouse</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Serie4" type="text" name="serie4"  /><label class="label" for="Serie4">Serial del Mouse</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Cargador" type="text" name="cargador"  /><label class="label" for="Cargador">S/Corriente</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Usuario" type="text" name="usuario"  /><label class="label" for="Usuario">Nombre de Usuario</label>
-				</span>
-			</div>
-
-			<div class="submit-reset">
-				<input class="boton submit-registro" type="submit" value="Enviar Registro">
-				<input class="boton reset" type="reset" value="Iniciar de nuevo">
-		</div>
-	</form>
-		
-
-
-
-	</section>
-
-	<div class="menu-wrapper">
+<div class="menu-wrapper">
                     
-                    <input type="checkbox" id="myml-menu-toggle"/>
+        <input type="checkbox" id="myml-menu-toggle"/>
                     
-                    <nav class="myml-nav" role="complementary">
+    <nav class="myml-nav" role="complementary">
                         <div class="myml-nav__container">
                             <section class="myml-nav__section myml-nav__section--toggle">
                                 <div class="myml-nav__section-heading">
                                     <span class="myml-nav__section-icon">
                                         <label class="myml-nav__toggle" for="myml-menu-toggle">
-                                            <svg viewBox="0 0 512 512">
+                                            <svg class="active" viewBox="0 0 512 512">
                                             <path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
                                                 c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"/>
                                         
@@ -119,9 +27,9 @@
                             </section>
 
                             <div class="myml-nav__menu">
-                                <section class="myml-nav__section  ">
+                                <section class="myml-nav__section myml-nav__section--active ">
                                     <a href="principal.php" class="myml-nav__section-heading">
-                                    <span class="myml-nav__section-icon myml-nav__section-icon--myml_summary">
+                                    <span class="myml-nav__section-icon myml-nav__section-icon--myml_summary" checked="">
 
                                     <img class="icon-menu" src="img/house.png" alt="">        
 
@@ -134,7 +42,7 @@
                         
                         <section class="myml-nav__section">
                             
-                            <input type="checkbox" class="myml-nav__section-toggle-trigger" id="myml-menu-section-toggle-my_purchases"  readonly=""/>
+                            <input type="checkbox" class="myml-nav__section-toggle-trigger" id="myml-menu-section-toggle-my_purchases" readonly=""/>
                             
                             <span class="myml-nav__section-heading myml-nav__section-heading--has-items">
                                 
@@ -167,9 +75,9 @@
                 
                 
                 
-                <section class="myml-nav__section  myml-nav__section--has-active-item  myml-nav__section--active">
+                <section class="myml-nav__section  myml-nav__section--has-active-item">
 
-                    <input type="checkbox" class="myml-nav__section-toggle-trigger" id="myml-menu-section-toggle-my_sales"  checked=""/>
+                    <input type="checkbox" class="myml-nav__section-toggle-trigger" id="myml-menu-section-toggle-my_sales"/>
                     
                     <span class="myml-nav__section-heading myml-nav__section-heading--has-items">
                         
@@ -207,18 +115,13 @@
                             <img class="icon-menu rotate" src="img/logout.png" alt="">
 
                         </span>
-                <p class="myml-nav__section-title">Salir</p>
+                <p class="myml-nav__section-title Exit">Salir</p>
                 </a>
 
             </section>
 
                 </div>
             </div>
-            </nav>
+    </nav>
             <label class="myml-nav__overlay" for="myml-menu-toggle"></label>
-            </div>
-
-    </div>
-	
-</body>
-</html>
+</div>

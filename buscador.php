@@ -105,5 +105,7 @@
                 </div>                         
             </section>            
         </div>
+    <?php require 'menu.php' ?>
+
     </body>
 </html>
