@@ -1,5 +1,4 @@
 <?php include 'conexion.php';
-$p="P-";
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,7 +43,7 @@ $p="P-";
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
-                                                    <td><?php echo $p . $fila['id'] ?></td>
+                                                    <td><?php echo $fila['id'] ?></td>
                                                     <td><?php echo $fila['funcionario'] ?></td>
                                                     <td><?php echo $fila['usuario'] ?></td>
                                                     <td><?php echo $fila['cargo'] ?></td>

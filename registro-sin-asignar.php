@@ -17,23 +17,6 @@
 
 			<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
 				<span>
-					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
-				</span>
-				<span>
-                    <select class="balloon indent" id="Cargo" type="text" name="cargo"  />Cargo<label class="label" for="Cargo">Cargo</label>
-                        <option value="Director de Linea">Director de Linea</option>
-                        <option value="Coordinador">Coordinador</option>                        
-                        <option value="Consultor Juridico">Consultor Juridico</option>
-                        
-                    </select>
-				</span>
-				<span>
-					<input class="balloon indent" id="Cedula" type="text" name="cedula"  /><label class="label" for="Cedula">Cedula</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Telefono" type="text" name="telefono"  /><label class="label" for="Telefono">Telefono</label>
-				</span>
-				<span>
 					<select class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
                         <option value="PB">PB</option>
                         <option value="P1"></option>
@@ -73,9 +56,6 @@
 				</span>
 				<span>
 					<input class="balloon indent" id="Cargador" type="text" name="cargador"  /><label class="label" for="Cargador">S/Corriente</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Usuario" type="text" name="usuario"  /><label class="label" for="Usuario">Nombre de Usuario</label>
 				</span>
 			</div>
 

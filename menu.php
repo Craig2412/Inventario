@@ -93,7 +93,7 @@
                     
                     <div class="myml-nav__section-list">
 
-                        <a class="myml-nav__menu-item" href="registro.php">
+                        <a class="myml-nav__menu-item" href="registro-pc-pre.php">
                             <span class="myml-nav__menu-item-text">PC</span>
                             </a>
 
