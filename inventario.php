@@ -1,4 +1,6 @@
-<?php include 'conexion.php';
+<?php 
+include 'conexion.php';
+require 'funciones.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,20 +32,24 @@
                                     <article class="element-red">
         <!-- Primer Cuadro -->
                                         <table  align="center">
-                                            <th align="center">ID</th>
-                                            <th align="center">Funcionario</th>
-                                            <th align="center">Usuario</th>
-                                            <th align="center">Cargo</th>
-                                            <th align="center">Cedula</th>
-                                            <th align="center">Telefono</th>
-                                            <th align="center">Piso</th>
+                                            <thead>
+                                                <th align="center">ID</th>
+                                                <th align="center">Asignacion</th>
+                                                <th align="center">Funcionario</th>
+                                                <th align="center">Usuario</th>
+                                                <th align="center">Cargo</th>
+                                                <th align="center">Cedula</th>
+                                                <th align="center">Telefono</th>
+                                                <th align="center">Piso</th>
+                                            </thead>
                                         
                                             <?php
-                                                $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                                $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
                                                     <td><?php echo $fila['id'] ?></td>
+                                                    <td><?php echo asignacion($fila['asignacion'])?></td>
                                                     <td><?php echo $fila['funcionario'] ?></td>
                                                     <td><?php echo $fila['usuario'] ?></td>
                                                     <td><?php echo $fila['cargo'] ?></td>
@@ -68,7 +74,7 @@
                                             <th align="center">Marca Monitor</th>
                                     
                                             <?php
-                                                $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                                $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
@@ -99,7 +105,7 @@
                                             
 
                                             <?php
-                                                    $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                                    $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                                     while ($fila = $sel -> fetch_assoc()) {
                                                     ?>
                                                     <tr align="center">                                                  

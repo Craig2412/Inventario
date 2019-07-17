@@ -1,4 +1,7 @@
-<?php include 'conexion.php'?>
+<?php 
+include 'conexion.php';
+require 'funciones.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -55,7 +58,8 @@
                                     
                                 
                                     <?php
-                                        $sel = $conec -> query(" SELECT * FROM inventarioo WHERE (id         LIKE '%$busqueda%' OR
+                                        $sel = $conec -> query(" SELECT * FROM inventario_pc WHERE (id         LIKE '%$busqueda%' OR
+                                                                                                 asignacion LIKE '%$busqueda%' OR
                                                                                                  funcionario LIKE '%$busqueda%' OR
                                                                                                  usuario     LIKE '%$busqueda%' OR
                                                                                                  cargo       LIKE '%$busqueda%' OR
@@ -78,6 +82,7 @@
                                         ?>
                                         <tr align="center">
                                             <td><?php echo $fila['id'] ?></td>
+                                            <td><?php echo asignacion($fila['asignacion']) ?></td>
                                             <td><?php echo $fila['funcionario'] ?></td>
                                             <td><?php echo $fila['usuario'] ?></td>
                                             <td><?php echo $fila['cargo'] ?></td>

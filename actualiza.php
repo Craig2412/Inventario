@@ -20,7 +20,7 @@ include 'conexion.php';
 		$cargador = $_POST['cargador'];
 		$usuario = $_POST['usuario'];
 
-$ac = $conec -> query("UPDATE inventarioo SET 
+$ac = $conec -> query("UPDATE inventario_pc SET 
 				funcionario='$funcionario',
 				cargo='$cargo',
 				cedula='$cedula', 

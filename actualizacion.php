@@ -3,7 +3,7 @@
 
 $id = $_REQUEST['id'];
 
-$sel = $conec -> query("SELECT * FROM inventarioo WHERE id = '$id'");
+$sel = $conec -> query("SELECT * FROM inventario_pc WHERE id = '$id'");
 
 if ($fila = $sel -> fetch_assoc()) {
 }

@@ -15,7 +15,7 @@
 
 	include 'conexion.php';
 	require 'funciones.php';
-
+		$asignacion =$_POST['asignacion'];
 		$funcionario = $_POST['funcionario'] ?? 'N/A';
 		$cargo = $_POST['cargo']?? 'N/A';
 		$cedula = $_POST['cedula']?? 'N/A';
@@ -35,9 +35,9 @@
 		$usuario = $_POST['usuario'] ?? 'N/A';
 		$idPC= generador();
 
-	$inc = $conec -> query("INSERT INTO inventarioo
-										(id,funcionario,cargo,cedula,telefono,piso,dependencia,marca1,serie1,mac,marca2,serie2,marca3,serie3,marca4,serie4,cargador,usuario)
-							VALUES ('$idPC','$funcionario','$cargo','$cedula','$telefono','$piso','$dependencia','$marca1','$serie1','$mac','$marca2','$serie2','$marca3','$serie3','$marca4','$serie4','$cargador','$usuario')");
+	$inc = $conec -> query("INSERT INTO inventario_pc
+										(id,asignacion,funcionario,cargo,cedula,telefono,piso,dependencia,marca1,serie1,mac,marca2,serie2,marca3,serie3,marca4,serie4,cargador,usuario)
+							VALUES ('$idPC','$asignacion','$funcionario','$cargo','$cedula','$telefono','$piso','$dependencia','$marca1','$serie1','$mac','$marca2','$serie2','$marca3','$serie3','$marca4','$serie4','$cargador','$usuario')");
 
 
 	// Aqui esta lo que me da error, el comprueba si existe algo en la variable inc, pero me devuelve false, y por ende la condicional manda el echo "error"

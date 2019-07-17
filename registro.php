@@ -1,3 +1,7 @@
+<?php
+$asignacion = $_REQUEST['select'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +22,9 @@
 			<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
 				<span>
 					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
+				</span>
+				<span>
+					<input class="balloon indent" id="asignacion" type="text" name="asignacion" value="<?php echo $asignacion ?>" readonly/><label class="label" for="asignacion">Asignacion</label>
 				</span>
 				<span>
                     <select class="balloon indent" id="Cargo" type="text" name="cargo"  />Cargo<label class="label" for="Cargo">Cargo</label>

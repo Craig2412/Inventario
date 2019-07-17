@@ -1,3 +1,8 @@
+<?php 
+$select = $_REQUEST['select'];
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +21,9 @@
 			<h1 class="title ti-registro">Registro</h1>
 
 			<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
+				<span>
+					<input class="balloon indent" id="Asignacion" type="text" name="asignacion"  value="<?php echo $select ?>" readonly/><label class="label" for="Asignacion">Asignacion</label>
+				</span>
 				<span>
 					<select class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
                         <option value="PB">PB</option>

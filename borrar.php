@@ -17,7 +17,7 @@ include 'conexion.php';
 $id = $_REQUEST['id'];
 
 
-$el = $conec -> query("DELETE FROM inventarioo WHERE id = '$id'");
+$el = $conec -> query("DELETE FROM inventario_pc WHERE id = '$id'");
 
 if ($el) {
 	echo "El registro ha sido eliminado";

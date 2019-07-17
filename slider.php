@@ -31,7 +31,7 @@
                                     <th align="center">Piso</th>
                                 
                                     <?php
-                                        $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                        $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                         while ($fila = $sel -> fetch_assoc()) {
                                         ?>
                                         <tr align="center">
@@ -61,7 +61,7 @@
                                     <th align="center">Serial Monitor</th>
                                
                                     <?php
-                                        $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                        $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                         while ($fila = $sel -> fetch_assoc()) {
                                         ?>
                                         <tr align="center">
@@ -92,7 +92,7 @@
                                     <th></th>
 
                                     <?php
-                                            $sel = $conec ->query(" SELECT * FROM inventarioo ");
+                                            $sel = $conec ->query(" SELECT * FROM inventario_pc ");
                                             while ($fila = $sel -> fetch_assoc()) {
                                             ?>
                                             <tr align="center">                                                

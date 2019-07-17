@@ -35,7 +35,7 @@ require 'conexion.php';
 
 $id = $_REQUEST['id'];
 
-$val = $conec ->query(" SELECT * FROM inventarioo WHERE id='$id'");
+$val = $conec ->query(" SELECT * FROM inventario_pc WHERE id='$id'");
 
 $pdf = new PDF();
 $pdf->AddPage();
