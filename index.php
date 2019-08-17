@@ -26,10 +26,7 @@ if (!empty($_SESSION['active'])) {
 				$dato = mysqli_fetch_array($query);
 		
 				$_SESSION['active'] 	= true;
-				$_SESSION['idusuario']	= $dato['idusuario'];
-				$_SESSION['nombre']		= $dato['nombre'];
-				$_SESSION['user']		= $dato['usuario'];
-				$_SESSION['rol']		= $dato['rol'];
+				
 
 				echo 	"<script>
 							location.href='principal.php';

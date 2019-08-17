@@ -14,7 +14,7 @@
 		<form class="form col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12" action="direccionamiento.php" method="post">
             <section class="container-checkbox">
             <div>
-                <input type="checkbox" id="control_01" name="select" value="Asignado">
+                <input type="checkbox" id="control_01" name="select" value="1">
                 <label for="control_01" class="label-checkbox">
                     <h2>Asignado</h2>
                     <p>Selecione si el PC esta asignado a algun funcionario</p>

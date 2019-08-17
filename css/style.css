@@ -10,12 +10,20 @@ a{
 }
 
 body{
-    background-color:rgb(244, 248, 248);
+    background-color:hsl(210, 15%, 92%);
 }
 
 .todo{
     background:linear-gradient(to top, #E8FDFE 60%, hsl(212, 91%, 50%) 50%)  ;
     min-height: 100vh;
+}
+.rol{
+  display: flex;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .logo-login-header{
@@ -43,6 +51,48 @@ td{
   font-weight: 600;
   font-size: 0.9rem;
   height: 47px;
+  width: 150px;
+}
+
+.l-estaditicas-pc{
+  position: relative;
+  display: flex;
+  height: 46vh;
+  width: 100%;
+  top: 3rem;
+}
+
+.c-estadisticas-item{
+  width: 50%;
+  margin: 0 1rem 0 1rem;
+  color: white;
+  background: hsl(212, 91%, 50%);
+  border-radius: 10px;
+  /* display: flex; */
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+}
+
+.c-estadisticas-img{
+  width: 100%;
+  height: 47%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-estaditicas-movil{
+  position: relative;
+  width: 30%;
+  height: 50vh;
+  background-color: #000;
+}
+
+.l-estaditicas-laptop{
+  position: relative;
+  
+  width: 30%;
+  height: 50vh;
+  background-color: #000;
 }
 
 .correct{
@@ -57,9 +107,9 @@ td{
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 11%;
+  width: 9%;
   background-color: white;
-  padding: 0.6rem 2.5rem;
+  padding: 0.3rem 1.5rem;
   font-weight: 900;
   border-radius: 25px;
   box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
@@ -132,10 +182,20 @@ font-size:16px;
     min-height: 100vh;
 }
 
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .header-fixed{
     position: fixed;
     top: 0;
-    background-color: var(--color-header);
+    /* color: white; */
+    background-color: white;
     width: 100%;
     height: 2.6rem;
     display: flex;
@@ -231,12 +291,12 @@ font-size:16px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 48vh;
 }
 
 .title{
     position: relative;
-    top: 3rem;
+    top: 4rem;
     padding: 1rem;
     color: var(--color);
     text-align: center;
@@ -267,6 +327,7 @@ font-size:16px;
 
 .icon-account{
     position: absolute;
+    /* top: -1.5rem; */
     left: 0;
     right: 0;
     margin: -3rem auto 0;
@@ -310,9 +371,30 @@ font-size:16px;
     width: 21%
 }
 
+.c-date-estadisticas{
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.c-container-icon-estadisticas-img{
+  background-color: white;
+  border-top-left-radius: 9px;
+  /* border: 2px solid #aaa; */
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 9px;
+}
+
 .submit-registro{
     border-radius: 0 0 0 5px;
     height: 3rem;
+}
+
+.c-link-estadisticas{
+  /* height: 84%; */
+  width: 31%;
 }
 
 .boton-invent{
@@ -450,7 +532,7 @@ font-size:16px;
 
 @media(min-width:1200px){
 
-	.col-lg-12{width:100%;}
+	.col-lg-12{width: 100%;}
 	.col-lg-11{width:91.66666667%;}
 	.col-lg-10{width:83.33333333%;}
 	.col-lg-9{width:75%;}
@@ -857,11 +939,12 @@ input[name="slider-select-element"] {
     transition: width 0.25s ease-out; }
   
   .myml-nav {
-    background-color: var(--transparent);
+    background-color: white;
     height: 100vh;
     min-height: 100%;
     z-index: 100;
-    position: relative; }
+    position: relative;
+    }
   
   .myml-nav__container {
     font-size: 13px;

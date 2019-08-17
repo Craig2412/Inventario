@@ -25,18 +25,34 @@ $select = $_REQUEST['select'];
 					<input class="balloon indent" id="Asignacion" type="text" name="asignacion"  value="<?php echo $select ?>" readonly/><label class="label" for="Asignacion">Asignacion</label>
 				</span>
 				<span>
+					<input class="balloon indent" id="Equipo" type="text" name="equipo" autocomplete="nos" value="PC" readonly /><label class="label" for="Equipo">Tipo de Equipo</label>
+				</span>
+
+				<span>
+                    <select class="balloon indent" id="Cargo" type="text" name="cargo"  />Cargo<label class="label" for="Cargo" readonly>Cargo</label>
+                        <option value="0">N/A</option>
+                    </select>
+				</span>
+
+				<span>
 					<select class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
                         <option value="PB">PB</option>
                         <option value="P1"></option>
                         <option value="P2"></option>
                         <option value="P3"></option>
                     </select>
-                </span>
+				</span>
+
 				<span>
-					<input class="balloon indent" id="Dependencia" type="text" name="dependencia" /><label class="label" for="Dependencia">Dependencia</label>
+                    <select class="balloon indent" id="Dependencia" type="text" name="dependencia" readonly >Dependencia<label class="label" for="Dependencia">Dependencia</label>
+                        <option value="0">N/A</option>
+                    </select>
 				</span>
 				<span>
 					<input class="balloon indent" id="Marca1" type="text" name="marca1" /><label class="label" for="Marca1">Marca de PC</label>
+				</span>
+				<span>
+					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>
 				</span>
 				<span>
 					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>

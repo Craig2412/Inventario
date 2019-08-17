@@ -2,7 +2,7 @@
 function direccionamiento($select){
     $empty='';
     $noEmpty='';
-        if ($select==='No asignado') {
+        if ($select===2) {
         $empty.="<script> location.href='registro_sin_asignar.php?select=$select'; </script>";
         return $empty;
         }else{
@@ -11,16 +11,16 @@ function direccionamiento($select){
         }
 }
 
-function generador(){
+function generador($equipo){
     $largo= 5;
     $cadena=  '0123456789';
     $password = '';
     $limite = strlen($cadena) - 1;
-    $prefix='PC-';
+    
     
     for ($i=0; $i < $largo; $i++)
         $password .= $cadena[rand(0, $limite)];
-        $password= $prefix . $password;
+        $password= $equipo ."-". $password;
     
     return $password;
 }
@@ -37,6 +37,8 @@ function asignacion ($fila){
         return $img;
     }
 }
+
+
 
 
 ?>
