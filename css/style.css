@@ -25,6 +25,7 @@ body{
   /* align-items: center; */
   justify-content: center;
 }
+<<<<<<< HEAD
 
 .flechita::after{
   position: relative;
@@ -37,6 +38,8 @@ body{
   background-image: url(../svg/arrow.svg);
   text-decoration:none;
 } 
+=======
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 
 .logo-login-header{
     position: fixed;
@@ -129,9 +132,15 @@ td{
   justify-content: center;
   align-items: center;
   display: flex;
+<<<<<<< HEAD
   width: 10%;
   background-color: white;
   padding: 0.5rem 2.5rem;
+=======
+  width: 9%;
+  background-color: white;
+  padding: 0.3rem 1.5rem;
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
   font-weight: 900;
   border-radius: 25px;
   box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
@@ -216,7 +225,8 @@ font-size:16px;
 .header-fixed{
     position: fixed;
     top: 0;
-    background-color: var(--color-header);
+    /* color: white; */
+    background-color: white;
     width: 100%;
     height: 2.6rem;
     display: flex;
@@ -313,11 +323,19 @@ font-size:16px;
     flex-direction: column;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD
     height: 41vh;
 }
 
 .title{
   position: relative;
+=======
+    height: 48vh;
+}
+
+.title{
+    position: relative;
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
     top: 4rem;
     padding: 1rem;
     color: var(--color);
@@ -348,7 +366,11 @@ font-size:16px;
 
 
 .icon-account{
+<<<<<<< HEAD
   position: absolute;
+=======
+    position: absolute;
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
     /* top: -1.5rem; */
     left: 0;
     right: 0;
@@ -409,10 +431,31 @@ font-size:16px;
   border-top-right-radius: 9px;
 }
 
+.c-date-estadisticas{
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.c-container-icon-estadisticas-img{
+  background-color: white;
+  border-top-left-radius: 9px;
+  /* border: 2px solid #aaa; */
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 9px;
+}
+
 .submit-registro{
     border-radius: 0 0 0 5px;
     height: 3rem;
   }
+
+.c-link-estadisticas{
+  /* height: 84%; */
+  width: 31%;
+}
 
 .c-link-estadisticas{
   /* height: 84%; */
@@ -965,11 +1008,12 @@ input[name="slider-select-element"] {
     transition: width 0.25s ease-out; }
   
   .myml-nav {
-    background-color: var(--transparent);
+    background-color: white;
     height: 100vh;
     min-height: 100%;
     z-index: 100;
-    position: relative; }
+    position: relative;
+    }
   
   .myml-nav__container {
     font-size: 13px;

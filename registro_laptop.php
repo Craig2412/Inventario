@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $asignacion = $_REQUEST['select'];
 ?>
@@ -16,6 +17,20 @@ $asignacion = $_REQUEST['select'];
 
 		<section class="login registro col-lg-6 col-md-7 col-sm-12 col-xs-12 col-xf-12">
 		<form class="form col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12" action="proceso.php" method="post">
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Inventario</title>
+	<meta charset="utf-8">
+	<?php include 'enlaces.php' ?>
+    <title>Registro Movil</title>
+</head>
+<body>
+
+
+<form class="form col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12" action="proceso.php" method="post">
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 			<img class="icon-account icon-registro" src="img/registro.png" alt="">
 			<h1 class="title ti-registro">Registro</h1>
 
@@ -24,7 +39,11 @@ $asignacion = $_REQUEST['select'];
 					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
 				</span>
 				<span>
+<<<<<<< HEAD
 					<input class="balloon indent" id="Equipo" type="text" name="equipo" autocomplete="nos" value="MOVIL" readonly /><label class="label" for="Equipo">Tipo de Equipo</label>
+=======
+					<input class="balloon indent" id="Equipo" type="text" name="equipo" autocomplete="nos" value="PC" readonly /><label class="label" for="Equipo">Tipo de Equipo</label>
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 				</span>
 				<span>
 					<input class="balloon indent" id="asignacion" type="text" name="asignacion" value="<?php echo $asignacion ?>" readonly/><label class="label" for="asignacion">Asignacion</label>
@@ -45,9 +64,15 @@ $asignacion = $_REQUEST['select'];
 				<span>
 					<select class="balloon indent" id="Piso" type="text" name="piso" ><label class="label" for="Piso">Piso</label>
                         <option value="PB">PB</option>
+<<<<<<< HEAD
                         <option value="P1">P1</option>
                         <option value="P2">P2</option>
                         <option value="P3">P3</option>
+=======
+                        <option value="P1"></option>
+                        <option value="P2"></option>
+                        <option value="P3"></option>
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
                     </select>
                 </span>
 				<span>
@@ -68,11 +93,19 @@ $asignacion = $_REQUEST['select'];
                         <option value="14">Oficina de gestion humana</option>
                         <option value="15">Oficina de tecnologias de la informacion y la comunicacion</option>
                         <option value="16">Oficina estrategica de seguimiento y evaluacion de politicas publicas</option>
+<<<<<<< HEAD
                         <option value="17">Viceministerio de administracion de cuencas hidrograficas</option>
                         <option value="18">Viceministerio para la gestion popular del agua</option>
                         
                     </select>
 					</span>
+=======
+                        <option value="17">Viceministerio de administracion de cuentas hidrograficas</option>
+                        <option value="18">Viceministerio para la gestion popular del agua</option>
+                        
+                    </select>
+				</span>
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 				<span>
 					<input class="balloon indent" id="Marca1" type="text" name="marca_laptop" /><label class="label" for="Marca1">Marca del Laptop</label>
 				</span>
@@ -96,6 +129,7 @@ $asignacion = $_REQUEST['select'];
 				<input class="boton reset" type="reset" value="Iniciar de nuevo">
 		</div>
 	</form>
+<<<<<<< HEAD
 		
 
 
@@ -106,5 +140,9 @@ $asignacion = $_REQUEST['select'];
     require 'menu.php'
     ?>
 	
+=======
+
+
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 </body>
 </html>

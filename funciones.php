@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 function direccionamiento1($select, $Nombre_tabla){
 
     switch ($Nombre_tabla) {
@@ -11,6 +12,17 @@ function direccionamiento1($select, $Nombre_tabla){
             } else{
             $direccion.= "<script> location.href='registro.php?select=$select&ID=tabla$Nombre_tabla'; </script>";
             return $direccion;
+=======
+function direccionamiento($select){
+    $empty='';
+    $noEmpty='';
+        if ($select===2) {
+        $empty.="<script> location.href='registro_sin_asignar.php?select=$select'; </script>";
+        return $empty;
+        }else{
+            $noEmpty.= "<script> location.href='registro.php?select=$select'; </script>";
+            return $noEmpty;
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
         }
     
             break;
@@ -59,7 +71,10 @@ function direccionamiento1($select, $Nombre_tabla){
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 function generador($equipo){
     $largo= 5;
     $cadena=  '0123456789';
@@ -90,5 +105,8 @@ function asignacion ($fila){
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 ?>
