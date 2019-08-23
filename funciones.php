@@ -9,7 +9,7 @@ function direccionamiento1($select, $Nombre_tabla){
                 $direccion.="<script> location.href='registro_sin_asignar.php?select=$select'; </script>";
                 return $direccion;
             } else{
-            $direccion.= "<script> location.href='registro.php?select=$select&ID=tabla$Nombre_tabla'; </script>";
+            $direccion.= "<script> location.href='registro_movil.php?select=$select'; </script>";
             return $direccion;
         }
     
@@ -82,6 +82,14 @@ function asignacion ($fila){
     }
     if ($filaasignada === 'No asignado') {
         $img = '<img  class="incorrect" src="img/no_asignado.png" alt="asignado" title="No asignado">';
+        return $img;
+    }
+    if ($filaasignada === 'Administrador') {
+        $img = '<img  class="admin" src="img/shield.png" alt="asignado" title="Asignado">';
+        return $img;
+    }
+    if ($filaasignada === 'Analista') {
+        $img = '<img  class="analista" src="img/check.png" alt="asignado" title="No asignado">';
         return $img;
     }
 }

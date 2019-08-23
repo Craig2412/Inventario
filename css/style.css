@@ -20,11 +20,19 @@ body{
 .rol{
   display: flex;
   position: relative;
-  top: -50px;
+  top: -45px;
   width: 100%;
   /* align-items: center; */
   justify-content: center;
 }
+
+.c-rol{
+  background: hsl(212, 91%, 50%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 23px;
+}
+
+.c-rol>span{color: aqua;}
 
 .flechita::after{
   position: relative;
@@ -79,19 +87,37 @@ td{
 .l-estaditicas-pc{
   position: relative;
   display: flex;
-  height: 46vh;
+  height: 47vh;
+  /* color: white; */
   width: 100%;
-  top: 3rem;
+  top: 4rem;
 }
 
 .c-estadisticas-item{
   width: 50%;
   margin: 0 1rem 0 1rem;
-  color: white;
+  
   background: hsl(212, 91%, 50%);
   border-radius: 10px;
-  /* display: flex; */
+ 
   box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+}
+
+.c-container-p-estadisticas{
+  display: flex;
+  height: 51%;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.c-estadisticas-item:hover{
+  transform: translateY(-0.35%);
+  -webkit-transition: all 0.30s ease;
+    -moz-transition: all 0.30s ease;
+    -ms-transition: all 0.30s ease;
+    -o-transition: all 0.30s ease;
+    transition: all 0.30s ease;
 }
 
 .c-estadisticas-img{
@@ -117,12 +143,23 @@ td{
   background-color: #000;
 }
 
-.correct{
+.correct,
+.incorrect{
   width: 2rem;
 }
 
-.incorrect{
-  width: 2rem;
+.admin,
+.analista{
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+
+.c-rol-estado{
+  display: inline;
+  /* padding: 1rem 0; */
+  /* line-height: 2rem; */
+  color: white;
+  vertical-align: super;
 }
 
 .logo-login{
@@ -216,8 +253,8 @@ font-size:16px;
 .header-fixed{
     position: fixed;
     top: 0;
-    /* color: white; */
-    background-color: white;
+    color: white;
+    background-color: hsl(212, 91%, 50%);
     width: 100%;
     height: 2.6rem;
     display: flex;
@@ -236,11 +273,12 @@ font-size:16px;
     /* background-color: rgba(26, 26, 26, 0.849); */
 }
 
+
 .registro{
     display: flex;
     justify-content: center;
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 12rem;
 }
 
@@ -254,7 +292,7 @@ font-size:16px;
     right: 0;
     bottom: 0;
     width: 25rem;
-    border-bottom: 2px solid rgb(95, 95, 95);
+    border-bottom: 2px solid white;
 }
 
 .container-nav{
@@ -263,7 +301,7 @@ font-size:16px;
     bottom: 0;
     width: 7rem;
     height: 2rem;
-    border-left: 2px solid rgb(95, 95, 95);
+    border-left: 2px solid white;
 }
 
 .container-nav a{
@@ -331,8 +369,8 @@ font-size:16px;
   }
 
 .ti-registro{
-  margin-top: 3rem;
-    margin-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .form{
@@ -397,6 +435,7 @@ font-size:16px;
 .c-date-estadisticas{
   text-align: center;
   padding: 0.5rem 0 0.5rem 0;
+  color: white;
 }
 
 .c-container-icon-estadisticas-img{
@@ -410,10 +449,21 @@ font-size:16px;
   border-top-right-radius: 9px;
 }
 
-.c-date-estadisticas{
-  text-align: center;
-  padding: 0.5rem 0 0.5rem 0;
+.c-container-principal{
+  display: flex;
+  position: relative;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: 2rem 1.5rem;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 89%;
+  height: 80vh;
+  background: #ffffff4a;
+  border-radius: 10px;
 }
+
 
 .c-container-icon-estadisticas-img{
   background-color: white;
@@ -482,12 +532,15 @@ font-size:16px;
 
 .row {
   width: 100%;
-    margin: 0 auto;
-    padding: 3rem 1.2rem 2rem;
-    position: relative;
-    text-align: center;
-    top: 3rem;
+  margin: 0 auto;
+  padding: 3rem 1.2rem 2rem;
+  position: relative;
+  text-align: center;
   }
+
+.index{
+  top: 3rem;
+}
 
 .row span {
     height: 10%;
@@ -987,7 +1040,7 @@ input[name="slider-select-element"] {
     transition: width 0.25s ease-out; }
   
   .myml-nav {
-    background-color: white;
+    background-color: #dde3eaed;
     height: 100vh;
     min-height: 100%;
     z-index: 100;

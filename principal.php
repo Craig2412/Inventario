@@ -1,4 +1,7 @@
-<?php include 'conexion.php' ?>
+<?php 
+include 'conexion.php' ;
+require 'funciones.php';
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <head>
@@ -19,15 +22,17 @@
         <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         </header>    
         
+
+        <div class="c-container-principal">
         <?php
             $sel = $conec ->query(" SELECT `usuario`.`rol`, `rol`.`rol`
             FROM `usuario` 
                 LEFT JOIN `rol` ON `usuario`.`rol` = `rol`.`idrol`;");
             if ($var = $sel -> fetch_assoc()) {
             ;?> 
-            <?php echo '<div class="rol"><p>' . $var['rol'] . '</p></div>'?><?php } ?>
+            <?php echo '<div class="rol"><section class="c-rol"><p class="c-rol-estado"><span>Hey, </span>'. $var['rol'] .'</p>' .asignacion($var['rol']). '</section></div>'?><?php } ?>
 
-            <div class="l-estaditicas-pc col-lg-10">
+            <div class="l-estaditicas-pc ">
 
 <div class="c-estadisticas-item">
 
@@ -37,6 +42,7 @@
                 </a>
                 </div>
 
+                <div class="c-container-p-estadisticas">
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc where id_asignacion = 1");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Asignados: ' . $count['total'] . '</p>';?>
@@ -48,6 +54,7 @@
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Total: ' . $count['total'] . '</p>';?>
+                </div>
 </div>
 
 <div class="c-estadisticas-item">
@@ -58,6 +65,7 @@
                 </a>
                 </div>
 
+                <div class="c-container-p-estadisticas">
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc where id_asignacion = 1");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Asignados: ' . $count['total'] . '</p>';?>
@@ -69,6 +77,7 @@
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Total: ' . $count['total'] . '</p>';?>
+                </div>
 </div>
 
 <div class="c-estadisticas-item">
@@ -79,6 +88,7 @@
                 </a>
                 </div>
 
+                <div class="c-container-p-estadisticas">
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc where id_asignacion = 1");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Asignados: ' . $count['total'] . '</p>';?>
@@ -90,6 +100,7 @@
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Total: ' . $count['total'] . '</p>';?>
+                </div>
 </div>
 
 <div class="c-estadisticas-item">
@@ -100,6 +111,7 @@
                 </a>
                 </div>
 
+                <div class="c-container-p-estadisticas">
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc where id_asignacion = 1");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Asignados: ' . $count['total'] . '</p>';?>
@@ -111,6 +123,9 @@
                 <?php  $result=$conec->query("SELECT count(*) as total from inventario_pc");
                 $count=$result->fetch_assoc();
                 echo '<p class="c-date-estadisticas">Total: ' . $count['total'] . '</p>';?>
+                </div>
+</div>
+
 </div>
 
         

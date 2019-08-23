@@ -63,7 +63,7 @@ if (!empty($_SESSION['active'])) {
 			<h1 class="title">Inicio de Sesion</h1>
 			<div class="container-form col-lg-12 col-md-12 col-sm-12 col-xs-6 col-xf-10">
 					<form  class="form col-lg-10 col-md-12 col-sm-12 col-xs-6 col-xf-10" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
-						<div class="row"> 
+						<div class="row index"> 
 							<span>
 								<input class="balloon usuario" id="Usuario" type="text" name="usuario" required/><label for="Usuario">Usuario</label>
 							</span>

@@ -55,9 +55,6 @@ $select = $_REQUEST['select'];
 					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>
-				</span>
-				<span>
 					<input class="balloon indent" id="Mac" type="text" name="mac" /><label class="label" for="Mac">MAC</label>
 				</span>
 				<span>
