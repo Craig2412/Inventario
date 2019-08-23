@@ -1,8 +1,10 @@
 <?php
 require 'funciones.php';
 if ($_POST) {
-    $select = $_POST['select'] ?? 'No asignado';
-    echo direccionamiento($select);
+    $Nombre_tabla = $_POST['Nombre_tabla'];
+    $select = $_POST['select'] ?? 2;
+    $select + 0;
+    echo direccionamiento1($select, $Nombre_tabla);
 } 
 
 ?>

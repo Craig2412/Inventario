@@ -6,7 +6,7 @@ require 'funciones.php';
 <html>
     <head>
         <title>Inventario 1</title>
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -40,22 +40,25 @@ require 'funciones.php';
                                                 <th align="center">Cargo</th>
                                                 <th align="center">Cedula</th>
                                                 <th align="center">Telefono</th>
-                                                <th align="center">Piso</th>
+                                                
                                             </thead>
                                         
                                             <?php
-                                                $sel = $conec ->query(" SELECT * FROM inventario_pc ");
+                                                $sel = $conec ->query(" SELECT `inventario_pc`.*, `asignacion`.`asignacion`, `cargo`.`cargo`
+                                                FROM `inventario_pc` 
+                                                    LEFT JOIN `asignacion` ON `inventario_pc`.`id_asignacion` = `asignacion`.`id_asignacion` 
+                                                    LEFT JOIN `cargo` ON `inventario_pc`.`id_cargo` = `cargo`.`id_cargo`;");
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
                                                     <td><?php echo $fila['id'] ?></td>
                                                     <td><?php echo asignacion($fila['asignacion'])?></td>
-                                                    <td><?php echo $fila['funcionario'] ?></td>
-                                                    <td><?php echo $fila['usuario'] ?></td>
-                                                    <td><?php echo $fila['cargo'] ?></td>
+                                                    <td><?php echo utf8_encode($fila['funcionario'])?></td>
+                                                    <td><?php echo utf8_encode($fila['usuario'])?></td>
+                                                    <td><?php echo utf8_encode($fila['cargo']) ?></td>
                                                     <td><?php echo $fila['cedula'] ?></td>
                                                     <td><?php echo $fila['telefono'] ?></td>
-                                                    <td><?php echo $fila['piso'] ?></td>
+                                                    
                                                 </tr>
                                             <?php } ?>
 
@@ -67,6 +70,7 @@ require 'funciones.php';
                                     <article class="element-green">
         <!-- Segundo Cuadro -->
                                         <table  align="center">
+                                            <th align="center">Piso</th>
                                             <th align="center">Dependencia</th>
                                             <th align="center">Marca PC</th>
                                             <th align="center">Serial PC</th>
@@ -74,10 +78,13 @@ require 'funciones.php';
                                             <th align="center">Marca Monitor</th>
                                     
                                             <?php
-                                                $sel = $conec ->query(" SELECT * FROM inventario_pc ");
+                                                $sel = $conec ->query("SELECT `inventario_pc`.*, `dependencia`.`dependencia`
+                                                FROM `inventario_pc` 
+                                                    LEFT JOIN `dependencia` ON `inventario_pc`.`id_dependencia` = `dependencia`.`id_dependencia`; ");
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
+                                                    <td><?php echo $fila['piso'] ?></td>
                                                     <td class="filita"><?php echo $fila['dependencia'] ?></td>
                                                     <td><?php echo $fila['marca1'] ?></td>
                                                     <td><?php echo $fila['serie1'] ?></td>
@@ -135,7 +142,8 @@ require 'funciones.php';
                             <label for="element2"></label>
                             <label for="element3"></label>
                         </div>
-                    </section>            
+                    </section> 
+                    <script src="btn.js"></script>           
                 </div>
 
 

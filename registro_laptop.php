@@ -5,7 +5,7 @@ $asignacion = $_REQUEST['select'];
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Inventario</title>
+	<title>Registro Laptop</title>
 	<meta charset="utf-8">
 	<?php include 'enlaces.php' ?>
 </head>
@@ -72,18 +72,21 @@ $asignacion = $_REQUEST['select'];
                         <option value="18">Viceministerio para la gestion popular del agua</option>
                         
                     </select>
+					</span>
+				<span>
+					<input class="balloon indent" id="Marca1" type="text" name="marca_laptop" /><label class="label" for="Marca1">Marca del Laptop</label>
+				</span>
+                <span>
+					<input class="balloon indent" id="Marca1" type="text" name="modelo_laptop" /><label class="label" for="Marca1">Modelo del Laptop</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Marca1" type="text" name="marca1" /><label class="label" for="Marca1">Marca de Movil</label>
+					<input class="balloon indent" id="Serie1" type="text" name="serie_laptop" /><label class="label" for="Serie1">Serial de la Laptop</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del Movil</label>
+					<input class="balloon indent" id="Mac" type="text" name="serie_cargador_laptop" /><label class="label" for="Mac">Serial del cargador</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Mac" type="text" name="mac" /><label class="label" for="Mac">IMEI</label>
-				</span>
-				<span>
-					<input class="balloon indent" id="Marca2" type="text" name="marca2"  /><label class="label" for="Marca2">Numero Del Telefono Asignado</label>
+					<input class="balloon indent" id="Marca2" type="text" name="serie_pila"  /><label class="label" for="Marca2">Serial de la bateria</label>
 				</span>
 				
 			</div>

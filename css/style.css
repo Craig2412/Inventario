@@ -10,19 +10,49 @@ a{
 }
 
 body{
-    background-color:rgb(244, 248, 248);
+    background-color:hsl(210, 15%, 92%);
 }
 
 .todo{
     background:linear-gradient(to top, #E8FDFE 60%, hsl(212, 91%, 50%) 50%)  ;
     min-height: 100vh;
 }
+.rol{
+  display: flex;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.flechita::after{
+  position: relative;
+  display: block;
+  top: 1rem;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(../svg/arrow.svg);
+  text-decoration:none;
+} 
 
 .logo-login-header{
     position: fixed;
     top: 2rem;
     left: 4rem;
     width: 100%;
+}
+
+.input-tabla {
+  height: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: 'work sans';
+  text-align: center;
+  border: 0;
 }
 
 table{
@@ -43,6 +73,48 @@ td{
   font-weight: 600;
   font-size: 0.9rem;
   height: 47px;
+  width: 150px;
+}
+
+.l-estaditicas-pc{
+  position: relative;
+  display: flex;
+  height: 46vh;
+  width: 100%;
+  top: 3rem;
+}
+
+.c-estadisticas-item{
+  width: 50%;
+  margin: 0 1rem 0 1rem;
+  color: white;
+  background: hsl(212, 91%, 50%);
+  border-radius: 10px;
+  /* display: flex; */
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+}
+
+.c-estadisticas-img{
+  width: 100%;
+  height: 47%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-estaditicas-movil{
+  position: relative;
+  width: 30%;
+  height: 50vh;
+  background-color: #000;
+}
+
+.l-estaditicas-laptop{
+  position: relative;
+  
+  width: 30%;
+  height: 50vh;
+  background-color: #000;
 }
 
 .correct{
@@ -57,9 +129,9 @@ td{
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 11%;
+  width: 10%;
   background-color: white;
-  padding: 0.6rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   font-weight: 900;
   border-radius: 25px;
   box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
@@ -126,6 +198,15 @@ font-size:16px;
 
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -204,13 +285,14 @@ font-size:16px;
     line-height: 2rem;
 }
 
+
 .logotipo{
     margin-left: auto;
     margin-right: auto;
     width: 6.25rem;
     font-size: 1.3rem;
     font-weight: 900;
-
+    
 }
 
 .login-img{
@@ -231,12 +313,12 @@ font-size:16px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 41vh;
 }
 
 .title{
-    position: relative;
-    top: 3rem;
+  position: relative;
+    top: 4rem;
     padding: 1rem;
     color: var(--color);
     text-align: center;
@@ -245,10 +327,10 @@ font-size:16px;
     font-weight: 900;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-}
+  }
 
 .ti-registro{
-    margin-top: 3rem;
+  margin-top: 3rem;
     margin-bottom: 0;
 }
 
@@ -266,7 +348,8 @@ font-size:16px;
 
 
 .icon-account{
-    position: absolute;
+  position: absolute;
+    /* top: -1.5rem; */
     left: 0;
     right: 0;
     margin: -3rem auto 0;
@@ -279,7 +362,7 @@ font-size:16px;
 
 .icon-registro{
     width: 14%;
-}
+  }
 
 .submit-reset{
     width: 100%;
@@ -287,51 +370,75 @@ font-size:16px;
 }
 
 .boton{
-    width: 50%;
+  width: 50%;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 	background-color: hsl(212, 91%, 50%);
 	color: var(--color-container);
 	font-weight: 400;
 	border-radius: 5px;
-    padding: 1rem;
-    border: none;
+  padding: 1rem;
+  border: none;
 }
 
 .boton-buscador{
-    position: absolute;
-    width: 20%;
-    height: 2.2rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    line-height: 0.4rem;
+  position: absolute;
+  width: 20%;
+  height: 2.2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 0.4rem;
 }
 .botones{
-    width: 21%
+  width: 21%
+}
+
+.c-date-estadisticas{
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.c-container-icon-estadisticas-img{
+  background-color: white;
+  border-top-left-radius: 9px;
+  /* border: 2px solid #aaa; */
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 9px;
 }
 
 .submit-registro{
     border-radius: 0 0 0 5px;
     height: 3rem;
+  }
+
+.c-link-estadisticas{
+  /* height: 84%; */
+  width: 31%;
 }
 
 .boton-invent{
     padding:  0.4rem 1rem;
     font-weight: 900;
     font-size: 0.8rem;
-}
+  }
 
 .reset{
     border-radius: 0 0 5px 0;
     height: 3rem;
     background-color: var(--color-alt);
     color: var(--color-container);
-}
-
+  }
+  
+  .selection{
+    border-bottom-right-radius:10px; 
+  }
 .boton:hover{
     transition: all 0.1s ease-in-out;
     background-color: var(--color-secundario-alt);
-}
+  }
 
 .reset:hover{
     background-color: var(--color-gris);
@@ -352,12 +459,13 @@ font-size:16px;
 }
 
 .row {
-    width: 100%;
+  width: 100%;
     margin: 0 auto;
     padding: 3rem 1.2rem 2rem;
     position: relative;
     text-align: center;
-}
+    top: 3rem;
+  }
 
 .row span {
     height: 10%;
@@ -450,7 +558,7 @@ font-size:16px;
 
 @media(min-width:1200px){
 
-	.col-lg-12{width:100%;}
+	.col-lg-12{width: 100%;}
 	.col-lg-11{width:91.66666667%;}
 	.col-lg-10{width:83.33333333%;}
 	.col-lg-9{width:75%;}

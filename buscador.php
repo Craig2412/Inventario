@@ -37,6 +37,7 @@ require 'funciones.php';
 <!-- Cuadro -->
                                 <table border="0" width="100%" align="center" >
                                     <th align="center">ID</th>
+                                    <th align="center">asignacion</th>
                                     <th align="center">Funcionario</th>
                                     <th align="center">Usuario</th>
                                     <th align="center">Cargo</th>
@@ -58,8 +59,12 @@ require 'funciones.php';
                                     
                                 
                                     <?php
-                                        $sel = $conec -> query(" SELECT * FROM inventario_pc WHERE (id         LIKE '%$busqueda%' OR
-                                                                                                 asignacion LIKE '%$busqueda%' OR
+                                        $sel = $conec -> query(" SELECT `inventario_pc`.*, `cargo`.`cargo`, `dependencia`.`dependencia`, `asignacion`.`asignacion`
+                                        FROM `inventario_pc` 
+                                            LEFT JOIN `cargo` ON `inventario_pc`.`id_cargo` = `cargo`.`id_cargo` 
+                                            LEFT JOIN `dependencia` ON `inventario_pc`.`id_dependencia` = `dependencia`.`id_dependencia` 
+                                            LEFT JOIN `asignacion` ON `inventario_pc`.`id_asignacion` = `asignacion`.`id_asignacion` WHERE (id         LIKE '%$busqueda%' OR
+                                                                                                 asignacion LIKE '$busqueda' OR
                                                                                                  funcionario LIKE '%$busqueda%' OR
                                                                                                  usuario     LIKE '%$busqueda%' OR
                                                                                                  cargo       LIKE '%$busqueda%' OR
@@ -85,7 +90,7 @@ require 'funciones.php';
                                             <td><?php echo asignacion($fila['asignacion']) ?></td>
                                             <td><?php echo $fila['funcionario'] ?></td>
                                             <td><?php echo $fila['usuario'] ?></td>
-                                            <td><?php echo $fila['cargo'] ?></td>
+                                            <td><?php echo utf8_encode($fila['cargo']) ?></td>
                                             <td><?php echo $fila['cedula'] ?></td>
                                             <td><?php echo $fila['telefono'] ?></td>
                                             <td><?php echo $fila['piso'] ?></td>

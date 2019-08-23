@@ -24,14 +24,16 @@ $asignacion = $_REQUEST['select'];
 					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
 				</span>
 				<span>
+					<input class="balloon indent" id="Equipo" type="text" name="equipo" autocomplete="nos" value="PC" readonly /><label class="label" for="Equipo">Tipo de Equipo</label>
+				</span>
+				<span>
 					<input class="balloon indent" id="asignacion" type="text" name="asignacion" value="<?php echo $asignacion ?>" readonly/><label class="label" for="asignacion">Asignacion</label>
 				</span>
 				<span>
                     <select class="balloon indent" id="Cargo" type="text" name="cargo"  />Cargo<label class="label" for="Cargo">Cargo</label>
-                        <option value="Director de Linea">Director de Linea</option>
-                        <option value="Coordinador">Coordinador</option>                        
-                        <option value="Consultor Juridico">Consultor Juridico</option>
-                        
+                        <option value="1">Director de Linea</option>
+                        <option value="2">Coordinador</option>                        
+                        <option value="3">Consultor Juridico</option>
                     </select>
 				</span>
 				<span>
@@ -41,7 +43,7 @@ $asignacion = $_REQUEST['select'];
 					<input class="balloon indent" id="Telefono" type="text" name="telefono"  /><label class="label" for="Telefono">Telefono</label>
 				</span>
 				<span>
-					<select class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
+					<select class="balloon indent" id="Piso" type="text" name="piso" ><label class="label" for="Piso">Piso</label>
                         <option value="PB">PB</option>
                         <option value="P1"></option>
                         <option value="P2"></option>
@@ -49,7 +51,27 @@ $asignacion = $_REQUEST['select'];
                     </select>
                 </span>
 				<span>
-					<input class="balloon indent" id="Dependencia" type="text" name="dependencia" /><label class="label" for="Dependencia">Dependencia</label>
+                    <select class="balloon indent" id="Dependencia" type="text" name="dependencia"  >Dependencia<label class="label" for="Dependencia">Dependencia</label>
+                        <option value="1">Auditoria interna</option>
+                        <option value="2">Atencion al ciudadano</option>                        
+                        <option value="3">Apoyo profesional</option>                        
+                        <option value="4">Bienestar social</option>
+                        <option value="5">Consultoria Juridica</option>
+                        <option value="6">Direccion general de bienes raices</option>
+                        <option value="7">Direccion general del despacho</option>
+                        <option value="8">Direccion general de la cultura del agua</option>
+                        <option value="9">Direccion general de transferencia revolucionaria del servicio de agua al poder popular</option>
+                        <option value="10">Direccion general de servicio de infraestructura</option>
+                        <option value="11">Gestion administrativa</option>
+                        <option value="12">Oficina de gestion comunicacional</option>
+                        <option value="13">Oficina de planificacion y presupuesto</option>
+                        <option value="14">Oficina de gestion humana</option>
+                        <option value="15">Oficina de tecnologias de la informacion y la comunicacion</option>
+                        <option value="16">Oficina estrategica de seguimiento y evaluacion de politicas publicas</option>
+                        <option value="17">Viceministerio de administracion de cuentas hidrograficas</option>
+                        <option value="18">Viceministerio para la gestion popular del agua</option>
+                        
+                    </select>
 				</span>
 				<span>
 					<input class="balloon indent" id="Marca1" type="text" name="marca1" /><label class="label" for="Marca1">Marca de PC</label>

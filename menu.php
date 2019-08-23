@@ -1,3 +1,4 @@
+<?php require 'conexion.php' ?>
 <div class="menu-wrapper">
                     
         <input type="checkbox" id="myml-menu-toggle"/>
@@ -58,16 +59,21 @@
                             
                             <div class="myml-nav__section-list">
                                 
-                                <a class="myml-nav__menu-item" href="inventario.php" ">
-                                    <span class="myml-nav__menu-item-text">Movil</span>
-                                </a>
-                                
-                                <a class="myml-nav__menu-item" href="#" >
+                                <a class="myml-nav__menu-item" href="inventario.php" >
                                     <span class="myml-nav__menu-item-text">PC</span>
                                 </a>
 
-                                <a class="myml-nav__menu-item" href="#">
+                                <a class="myml-nav__menu-item" href="inventario_movil.php" ">
+                                    <span class="myml-nav__menu-item-text">Movil</span>
+                                </a>
+                                
+
+                                <a class="myml-nav__menu-item" href="inventario_laptop.php">
                                     <span class="myml-nav__menu-item-text">Laptop</span>
+                                </a>
+
+                                <a class="myml-nav__menu-item" href="inventario_impresora.php">
+                                    <span class="myml-nav__menu-item-text">Impresoras</span>
                                 </a>
 
                             </div>
@@ -91,23 +97,19 @@
                         
                         </span>
                     
-                    <div class="myml-nav__section-list">
+                        <div class="myml-nav__section-list">
 
-                        <a class="myml-nav__menu-item" href="registro_pc_pre.php">
-                            <span class="myml-nav__menu-item-text">PC</span>
-                            </a>
-
-                            <a class="myml-nav__menu-item" href="#">
-                                <span class="myml-nav__menu-item-text">Movil</span>
-                            </a>
-
-                            <a class="myml-nav__menu-item" href="#">
-                                <span class="myml-nav__menu-item-text">Laptop</span>
-                            </a>
-
-                            <a class="myml-nav__menu-item" href="#"><span class="myml-nav__menu-item-text">Impresora</span></a></div></section>
-
-                    
+                            <?php
+                                $sel = $conec ->query("SELECT `tablas`.`ID_tabla`, `tablas`.`Nombre_tabla`
+                                FROM `tablas`;");
+                                while ($fila = $sel -> fetch_assoc()){
+                                    echo '<a class="myml-nav__menu-item" href="registro_pre.php?Nombre_tabla=' . utf8_encode($fila['Nombre_tabla']). '"> 
+                                        <span class="myml-nav__menu-item-text">'  .utf8_encode($fila['Nombre_tabla']). '</span>
+                                        </a>';
+                                }
+                            ?>  
+                            </div>
+                </section> 
                     <section class="myml-nav__section  ">
                         <a href="salir.php" class="myml-nav__section-heading">
                         <span class="myml-nav__section-icon myml-nav__section-icon--myml_summary">

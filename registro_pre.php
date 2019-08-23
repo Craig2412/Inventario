@@ -1,8 +1,16 @@
+<?php 
+require 'funciones.php';
+if (!empty($_GET)) {
+$Nombre_tabla = $_GET['Nombre_tabla'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Login Inventario</title>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 	<?php include 'enlaces.php' ?>
 </head>
 <body>
@@ -17,12 +25,13 @@
                 <input type="checkbox" id="control_01" name="select" value="1">
                 <label for="control_01" class="label-checkbox">
                     <h2>Asignado</h2>
-                    <p>Selecione si el PC esta asignado a algun funcionario</p>
+                    <p class="flechita">Selecione si el activo esta asignado a algun funcionario</p>
                 </label>
+                <input type="text" name="Nombre_tabla" id="" class="input-tabla" readonly value="<?php echo $Nombre_tabla ?>">
                 </div>
             </section>
             <div class="submit-reset submit-checkbox">
-				<input class="boton submit-registro col-lg-12" type="submit" value="Enviar Registro" name="enviar">
+				<input class="boton submit-registro  selection col-lg-12" type="submit" value="Enviar Registro" name="enviar">
 		</div>
 	</form>
 		
