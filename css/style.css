@@ -25,7 +25,6 @@ body{
   /* align-items: center; */
   justify-content: center;
 }
-<<<<<<< HEAD
 
 .flechita::after{
   position: relative;
@@ -38,8 +37,6 @@ body{
   background-image: url(../svg/arrow.svg);
   text-decoration:none;
 } 
-=======
->>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
 
 .logo-login-header{
     position: fixed;
@@ -132,15 +129,9 @@ td{
   justify-content: center;
   align-items: center;
   display: flex;
-<<<<<<< HEAD
   width: 10%;
   background-color: white;
   padding: 0.5rem 2.5rem;
-=======
-  width: 9%;
-  background-color: white;
-  padding: 0.3rem 1.5rem;
->>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
   font-weight: 900;
   border-radius: 25px;
   box-shadow:  0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
@@ -323,19 +314,11 @@ font-size:16px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-<<<<<<< HEAD
     height: 41vh;
 }
 
 .title{
   position: relative;
-=======
-    height: 48vh;
-}
-
-.title{
-    position: relative;
->>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
     top: 4rem;
     padding: 1rem;
     color: var(--color);
@@ -366,11 +349,7 @@ font-size:16px;
 
 
 .icon-account{
-<<<<<<< HEAD
   position: absolute;
-=======
-    position: absolute;
->>>>>>> d1965619a22cb898b618fdee37cca9386d1c84c0
     /* top: -1.5rem; */
     left: 0;
     right: 0;
